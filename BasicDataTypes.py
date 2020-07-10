@@ -70,3 +70,25 @@ if __name__ == '__main__':
     avg_mark = sum(query_score)/len(query_score)
     
     print("%.2f" %avg_mark)
+
+#Lists
+if __name__ == '__main__':
+    arr=[]
+    N = int(input())
+    for _ in range(N):
+        func, *para = list(input().split())
+        para = list(map(int,para))
+        if func=="print":
+             print(arr)
+        else:
+            getattr(arr,func)(*para)
+
+
+#Tuples
+        
+if __name__ == '__main__':
+    n = int(input())
+    integer_list = map(int, input().split())
+    tup = tuple(integer_list)
+    print(hash(tup))
+
